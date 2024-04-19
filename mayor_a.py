@@ -29,10 +29,9 @@ ventas = {
 }
 
 # Filtrar los meses que superan el umbral especificado
-meses_superiores = {mes: valor for mes, valor in ventas.items() if valor}
+meses_superiores = {mes: valor for mes, valor in ventas.items() if valor > int(umbral_str)}
 
 print(meses_superiores)
-
 
 
 
